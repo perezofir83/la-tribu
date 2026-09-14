@@ -121,7 +121,7 @@
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     // honeypot
-    if (form.querySelector('[name="botcheck"]').value) return;
+    if (form.querySelector('[name="botcheck"]').checked) return;
 
     let valid = true;
     form.querySelectorAll("[required]").forEach((el) => {
