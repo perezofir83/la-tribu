@@ -2,8 +2,8 @@
 // Edita este archivo y vuelve a publicar. No requiere build.
 window.LT_CONFIG = {
   // WhatsApp de la escuela (solo dígitos, con lada de país).
-  whatsapp: "525642298959",
-  whatsappDisplay: "+52 56 4229 8959",
+  whatsapp: "5215642298959",
+  whatsappDisplay: "+52 1 56 4229 8959",
 
   // Correo donde llegan los leads del formulario (el Gmail nuevo de La Tribu).
   leadEmail: "contact.escuelalatribu@gmail.com",
