@@ -153,6 +153,7 @@
         subject: T.subject + d.nombre + " (" + d.grado + ") [" + LANG + "]",
         from_name: "Sitio La Tribu",
         replyto: d.email || undefined,
+        ccemail: (cfg.leadCc || []).join(","),
         ...d,
         resumen: summary,
         idioma: LANG

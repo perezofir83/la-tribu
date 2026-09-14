@@ -6,7 +6,10 @@ window.LT_CONFIG = {
   whatsappDisplay: "+52 56 4229 8959",
 
   // Correo donde llegan los leads del formulario (el Gmail nuevo de La Tribu).
-  leadEmail: "",
+  leadEmail: "contact.escuelalatribu@gmail.com",
+
+  // Copias: cada lead llega también a estos correos (CC vía Web3Forms).
+  leadCc: ["Nellybordelais@icloud.com", "michal.weinberg@gmail.com"],
 
   // Web3Forms (https://web3forms.com) — crea la Access Key con el Gmail nuevo y pégala aquí.
   // Mientras esté vacía, el formulario envía los datos por WhatsApp como respaldo.
