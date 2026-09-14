@@ -61,4 +61,8 @@ Recomendación costo/beneficio: **escuelalatribu.com** (barato y estable) y, si 
 
 ## Publicar
 
-Cualquier hosting estático: Netlify (arrastrar `site/`), Cloudflare Pages, GitHub Pages o Vercel. Sin build.
+GitHub Pages, automático en cada push a `main` (workflow `.github/workflows/pages.yml` corre `build.py` y sube `site/`).
+
+- Repo: https://github.com/perezofir83/la-tribu
+- Sitio: https://perezofir83.github.io/la-tribu/
+- Dominio propio: crear `site/CNAME` con el dominio y apuntar un CNAME `www → perezofir83.github.io` (y A records del apex a GitHub Pages).
