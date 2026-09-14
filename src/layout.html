@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESC}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESC}}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/hero-manos.jpg">
+  <meta property="og:locale" content="es_MX">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "School",
+    "name": "La Tribu — Escuela Secundaria",
+    "description": "Secundaria comunitaria sin fines de lucro en Zapotal, Oaxaca, cerca de Mazunte. Pedagogía activa: hacer, sentir y pensar.",
+    "telephone": "+525642298959",
+    "address": { "@type": "PostalAddress", "addressLocality": "Zapotal", "addressRegion": "Oaxaca", "addressCountry": "MX" },
+    "areaServed": "Costa de Oaxaca"
+  }
+  </script>
+</head>
+<body>
+  <a class="hp" href="#main">Ir al contenido</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="La Tribu, inicio">
+        <img src="assets/img/logo.png" alt="" width="40" height="32">
+        <span>La Tribu</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="proyecto-educativo.html">El proyecto educativo</a></li>
+        <li><a href="biblioteca.html">La biblioteca</a></li>
+        <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a class="btn btn--whatsapp btn--icon" data-wa href="#" aria-label="Escríbenos por WhatsApp">{{ICON_WA}}</a>
+        <a class="btn btn--primary" href="inscripciones.html">Inscripciones</a>
+      </div>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="menu" id="menu" data-open="false" aria-label="Menú">
+    <div class="menu__top">
+      <a class="brand" href="index.html" style="color:#FAF8F4"><img src="assets/img/logo.png" alt="" style="filter:brightness(0) invert(.95)"><span>La Tribu</span></a>
+      <button class="menu__close" aria-label="Cerrar menú"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="proyecto-educativo.html">El proyecto educativo</a></li>
+      <li><a href="biblioteca.html">La biblioteca</a></li>
+      <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+      <li><a href="inscripciones.html">Inscripciones</a></li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="inscripciones.html">Déjanos tus datos</a>
+      <a class="btn btn--whatsapp" data-wa href="#">{{ICON_WA}} WhatsApp</a>
+    </div>
+  </nav>
+
+  <main id="main">
+{{CONTENT}}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="index.html"><img src="assets/img/logo.png" alt=""><span>La Tribu</span></a>
+          <p>Proyecto educativo sin fines de lucro con un enfoque humano, consciente, comunitario y de desarrollo integral.</p>
+        </div>
+        <div>
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="quienes-somos.html">Quiénes somos</a></li>
+            <li><a href="proyecto-educativo.html">El proyecto educativo</a></li>
+            <li><a href="biblioteca.html">La biblioteca</a></li>
+            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="inscripciones.html">Inscripciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Nos puedes contactar por WhatsApp.</li>
+            <li>Zapotal, Oaxaca · cerca de Mazunte</li>
+            <li><a data-wa href="#">WhatsApp: <span data-wa-display>+52 56 4229 8959</span></a></li>
+          </ul>
+        </div>
+        <div data-social-block>
+          <h4>Síguenos</h4>
+          <div class="footer__social">
+            <a data-social="instagram" href="#" aria-label="Instagram">{{ICON_IG}}</a>
+            <a data-social="facebook" href="#" aria-label="Facebook">{{ICON_FB}}</a>
+            <a data-social="youtube" href="#" aria-label="YouTube">{{ICON_YT}}</a>
+            <a data-social="tiktok" href="#" aria-label="TikTok">{{ICON_TT}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__legal">© 2026 La Tribu — Escuela Secundaria. Zapotal, Oaxaca. Proyecto comunitario sin fines de lucro.</div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa href="#" aria-label="Escríbenos por WhatsApp">{{ICON_WA}}</a>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
