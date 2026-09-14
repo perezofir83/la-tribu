@@ -1,0 +1,107 @@
+<!-- title: Inscriptions 2026–2027 — La Tribu -->
+<!-- desc: Laissez-nous vos coordonnées et nous vous contactons sur WhatsApp. Groupe fondateur de 1re et 2e année de secundaria à Zapotal, Oaxaca. -->
+<!-- /meta -->
+    <section class="hero hero--short">
+      <img class="hero__img" src="../assets/img/acantilado.jpg" alt="">
+      <div class="hero__content">
+        <p class="eyebrow">Inscriptions · Année scolaire 2026–2027</p>
+        <h1>Faisons entrer votre famille dans la Tribu.</h1>
+        <p class="lead">Laissez-nous vos coordonnées et nous vous écrivons sur WhatsApp pour discuter, sans hâte.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container landing">
+        <div class="reveal">
+          <h2>Ce qui se passe après l'envoi du formulaire</h2>
+          <ul class="landing__points">
+            <li><img src="../assets/icons/chevron.png" alt=""><div><strong>Nous vous écrivons sous 48 heures.</strong><br>Sur WhatsApp, pour convenir d'une date.</div></li>
+            <li><img src="../assets/icons/corazon.png" alt=""><div><strong>On discute.</strong><br>En visio ou en personne, ici à Zapotal. Nous répondons à toutes vos questions.</div></li>
+            <li><img src="../assets/icons/triangulo.png" alt=""><div><strong>On rencontre votre famille.</strong><br>Entrer à La Tribu, c'est rejoindre une communauté, et cela se décide dans les deux sens.</div></li>
+            <li><img src="../assets/icons/brote.png" alt=""><div><strong>Inscription.</strong><br>Nous la formalisons et vous accompagnons pour la suite.</div></li>
+          </ul>
+
+          <div class="card" style="padding:24px">
+            <p class="eyebrow">En bref</p>
+            <p style="margin:0 0 8px"><strong>Niveaux 2026–2027 :</strong> 1re et 2e année de secundaria (année de mise à niveau).</p>
+            <p style="margin:0 0 8px"><strong>Où :</strong> Zapotal, Oaxaca, près de Mazunte.</p>
+            <p style="margin:0 0 8px"><strong>Coûts :</strong> répartis entre les familles ; nous les voyons ensemble. <a href="{{P:faq}}">Plus d'infos dans les questions fréquentes.</a></p>
+            <p style="margin:0"><strong>Vous préférez parler tout de suite ?</strong> <a data-wa href="#">WhatsApp <span data-wa-display>+52 56 4229 8959</span></a></p>
+          </div>
+        </div>
+
+        <div class="landing__form reveal">
+          <form class="form-card form" id="lead-form" novalidate>
+            <div>
+              <h2 style="font-size:30px;margin-bottom:4px">Laissez-nous vos coordonnées</h2>
+              <p class="muted" style="margin:0">Les champs marqués <span style="color:var(--color-accent-text)">*</span> sont obligatoires.</p>
+            </div>
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+            <div class="form__row">
+              <div class="field">
+                <label for="nombre">Votre nom <span class="req">*</span></label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="whatsapp">Votre WhatsApp <span class="req">*</span></label>
+                <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="+…" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Votre e-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email">
+              <span class="hint">Facultatif. Pour vous envoyer des informations par écrit.</span>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="estudiante">Prénom de votre enfant <span class="req">*</span></label>
+                <input id="estudiante" name="estudiante" type="text" required>
+              </div>
+              <div class="field">
+                <label for="edad">Âge <span class="req">*</span></label>
+                <input id="edad" name="edad" type="number" min="10" max="17" inputmode="numeric" required>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="grado">Niveau souhaité <span class="req">*</span></label>
+                <select id="grado" name="grado" required>
+                  <option value="">Choisissez une option</option>
+                  <option>1re année de secundaria</option>
+                  <option>2e année de secundaria</option>
+                  <option>Je ne sais pas encore</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="origen">Comment nous avez-vous connus ?</label>
+                <select id="origen" name="origen">
+                  <option value="">Choisissez une option</option>
+                  <option>Recommandation d'une famille</option>
+                  <option>Instagram / Facebook</option>
+                  <option>Recherche Google</option>
+                  <option>J'habite dans la région</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="mensaje">Que souhaitez-vous savoir ?</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Parlez-nous de votre enfant et de vos questions."></textarea>
+            </div>
+
+            <label class="form__consent">
+              <input type="checkbox" name="consentimiento" required>
+              <span>J'accepte que La Tribu utilise ces données uniquement pour me contacter au sujet des inscriptions. Nous ne partageons vos informations avec personne.</span>
+            </label>
+
+            <button class="btn btn--primary btn--block" type="submit">Envoyer et être contacté·e</button>
+            <div class="form__status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>

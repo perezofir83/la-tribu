@@ -1,0 +1,107 @@
+<!-- title: Enrollment 2026–2027 — La Tribu -->
+<!-- desc: Leave your details and we'll contact you on WhatsApp. Founding group for 1st and 2nd grade of secondary school in Zapotal, Oaxaca. -->
+<!-- /meta -->
+    <section class="hero hero--short">
+      <img class="hero__img" src="../assets/img/acantilado.jpg" alt="">
+      <div class="hero__content">
+        <p class="eyebrow">Enrollment · 2026–2027 school year</p>
+        <h1>Let's bring your family into the Tribu.</h1>
+        <p class="lead">Leave your details and we'll message you on WhatsApp to talk, no rush.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container landing">
+        <div class="reveal">
+          <h2>What happens after you send the form</h2>
+          <ul class="landing__points">
+            <li><img src="../assets/icons/chevron.png" alt=""><div><strong>We message you within 48 hours.</strong><br>On WhatsApp, to agree on a date.</div></li>
+            <li><img src="../assets/icons/corazon.png" alt=""><div><strong>We talk.</strong><br>On a video call or in person, here in Zapotal. We answer all your questions.</div></li>
+            <li><img src="../assets/icons/triangulo.png" alt=""><div><strong>We meet your family.</strong><br>Joining La Tribu means joining a community, and that is decided both ways.</div></li>
+            <li><img src="../assets/icons/brote.png" alt=""><div><strong>Enrollment.</strong><br>We formalize it and accompany you in what comes next.</div></li>
+          </ul>
+
+          <div class="card" style="padding:24px">
+            <p class="eyebrow">Quick facts</p>
+            <p style="margin:0 0 8px"><strong>Grades 2026–2027:</strong> 1st and 2nd grade of secondary school (leveling year).</p>
+            <p style="margin:0 0 8px"><strong>Where:</strong> Zapotal, Oaxaca, near Mazunte.</p>
+            <p style="margin:0 0 8px"><strong>Costs:</strong> shared among the families; we go over them together. <a href="{{P:faq}}">More in the FAQ.</a></p>
+            <p style="margin:0"><strong>Prefer to talk now?</strong> <a data-wa href="#">WhatsApp <span data-wa-display>+52 56 4229 8959</span></a></p>
+          </div>
+        </div>
+
+        <div class="landing__form reveal">
+          <form class="form-card form" id="lead-form" novalidate>
+            <div>
+              <h2 style="font-size:30px;margin-bottom:4px">Leave your details</h2>
+              <p class="muted" style="margin:0">Fields marked <span style="color:var(--color-accent-text)">*</span> are required.</p>
+            </div>
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+            <div class="form__row">
+              <div class="field">
+                <label for="nombre">Your name <span class="req">*</span></label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="whatsapp">Your WhatsApp <span class="req">*</span></label>
+                <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="+…" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Your email</label>
+              <input id="email" name="email" type="email" autocomplete="email">
+              <span class="hint">Optional. To send you information in writing.</span>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="estudiante">Your child's name <span class="req">*</span></label>
+                <input id="estudiante" name="estudiante" type="text" required>
+              </div>
+              <div class="field">
+                <label for="edad">Age <span class="req">*</span></label>
+                <input id="edad" name="edad" type="number" min="10" max="17" inputmode="numeric" required>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="grado">Grade of interest <span class="req">*</span></label>
+                <select id="grado" name="grado" required>
+                  <option value="">Choose an option</option>
+                  <option>1st grade of secondary</option>
+                  <option>2nd grade of secondary</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="origen">How did you hear about us?</label>
+                <select id="origen" name="origen">
+                  <option value="">Choose an option</option>
+                  <option>Recommended by a family</option>
+                  <option>Instagram / Facebook</option>
+                  <option>Google search</option>
+                  <option>I live in the area</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="mensaje">What would you like to know?</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Tell us about your child and your questions."></textarea>
+            </div>
+
+            <label class="form__consent">
+              <input type="checkbox" name="consentimiento" required>
+              <span>I agree that La Tribu will use these details only to contact me about enrollment. We don't share your information with anyone.</span>
+            </label>
+
+            <button class="btn btn--primary btn--block" type="submit">Send and get in touch</button>
+            <div class="form__status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>

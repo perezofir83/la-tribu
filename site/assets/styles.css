@@ -151,6 +151,15 @@ p { margin: 0 0 1em; }
 .menu ul a { font-family: var(--font-display); font-size: 32px; color: var(--color-bg); }
 .menu .btn-row { margin-top: auto; }
 
+/* Language switcher */
+.lang { display: flex; gap: 2px; border: 1px solid var(--color-line); border-radius: var(--radius-pill); padding: 3px; }
+.lang a { font-family: var(--font-ui); font-size: 13px; font-weight: 500; color: var(--color-ink-soft); padding: 5px 9px; border-radius: var(--radius-pill); }
+.lang a:hover { text-decoration: none; color: var(--color-ink); }
+.lang a[aria-current="true"] { background: var(--color-ink); color: var(--color-bg); }
+.lang--menu { border-color: rgba(250,248,244,.3); align-self: flex-start; margin-bottom: 24px; }
+.lang--menu a { color: rgba(250,248,244,.7); font-size: 15px; padding: 8px 14px; }
+.lang--menu a[aria-current="true"] { background: var(--color-bg); color: var(--color-earth); }
+
 /* Hero */
 .hero {
   position: relative; min-height: 560px; height: 80vh; max-height: 820px;

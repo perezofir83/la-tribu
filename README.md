@@ -15,11 +15,12 @@ site/                  Sitio listo para publicar (sube esta carpeta tal cual)
 site/assets/config.js  WhatsApp, correo de leads, Web3Forms key, redes sociales
 ```
 
-Páginas: `index`, `quienes-somos`, `proyecto-educativo`, `biblioteca`, `preguntas-frecuentes`, `inscripciones` (landing con formulario de leads).
+Idiomas: **ES** (default, raíz `site/`), **EN** (`site/en/`), **FR** (`site/fr/`). Selector en el nav, `hreflang` en cada página.
+Páginas por idioma: inicio, quiénes somos, proyecto educativo, biblioteca, FAQ, inscripciones (landing con formulario). Fuentes en `src/pages/{es,en,fr}/`; textos del nav/footer en `STRINGS` dentro de `build.py`; mensajes del formulario en `I18N` dentro de `site/assets/main.js`.
 
 ## Editar
 
-1. Cambia texto en `src/pages/*.html` (o nav/footer en `src/layout.html`).
+1. Cambia texto en `src/pages/<idioma>/*.html` (nav/footer en `src/layout.html` + `STRINGS` en `build.py`). Enlaces internos: `{{P:about}}`, `{{P:enroll}}`, etc.
 2. `python3 build.py`
 3. Sube `site/`.
 
