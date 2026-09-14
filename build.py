@@ -70,7 +70,7 @@ ICONS = {
     "ICON_TT": '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.3 1.7 3.7 4 3.9v3a7.3 7.3 0 0 1-4-1.3v6.3A5.9 5.9 0 1 1 10.6 9v3.1a2.9 2.9 0 1 0 2.9 2.9V3h3z"/></svg>',
 }
 
-SITE_URL = "https://perezofir83.github.io/la-tribu/"
+SITE_URL = "https://escuelalatribu.xyz/"
 VERSION = str(int(time.time()))
 
 
