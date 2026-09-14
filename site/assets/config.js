@@ -8,13 +8,11 @@ window.LT_CONFIG = {
   // Correo donde llegan los leads del formulario (el Gmail nuevo de La Tribu).
   leadEmail: "contact.escuelalatribu@gmail.com",
 
-  // Copias: cada lead llega también a estos correos (CC vía Web3Forms).
-  leadCc: ["Nellybordelais@icloud.com", "michal.weinberg@gmail.com"],
 
   // Proveedor de envío: "formsubmit" (gratis, sin key; https://formsubmit.co) o "web3forms" (requiere web3formsKey).
   // Con "formsubmit", el PRIMER envío manda un correo de activación a leadEmail: hay que hacer clic en "Activate".
-  formProvider: "formsubmit",
-  web3formsKey: "",
+  formProvider: "web3forms",
+  web3formsKey: "6a4951d7-c09e-48a2-a44d-2434646291a8",
 
   // Redes sociales (deja vacío lo que no exista; el ícono se oculta solo).
   social: {

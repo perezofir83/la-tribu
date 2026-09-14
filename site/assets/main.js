@@ -156,7 +156,6 @@
         url = "https://formsubmit.co/ajax/" + cfg.leadEmail;
         payload = {
           _subject: subject,
-          _cc: (cfg.leadCc || []).join(","),
           _replyto: d.email || undefined,
           _template: "table",
           _captcha: "false",
