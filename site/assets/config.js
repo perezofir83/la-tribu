@@ -11,8 +11,9 @@ window.LT_CONFIG = {
   // Copias: cada lead llega también a estos correos (CC vía Web3Forms).
   leadCc: ["Nellybordelais@icloud.com", "michal.weinberg@gmail.com"],
 
-  // Web3Forms (https://web3forms.com) — crea la Access Key con el Gmail nuevo y pégala aquí.
-  // Mientras esté vacía, el formulario envía los datos por WhatsApp como respaldo.
+  // Proveedor de envío: "formsubmit" (gratis, sin key; https://formsubmit.co) o "web3forms" (requiere web3formsKey).
+  // Con "formsubmit", el PRIMER envío manda un correo de activación a leadEmail: hay que hacer clic en "Activate".
+  formProvider: "formsubmit",
   web3formsKey: "",
 
   // Redes sociales (deja vacío lo que no exista; el ícono se oculta solo).

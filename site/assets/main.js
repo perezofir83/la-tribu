@@ -136,7 +136,9 @@
     const d = Object.fromEntries(fd.entries());
     const summary = buildSummary(d);
 
-    if (!cfg.web3formsKey) {
+    const useFormsubmit = cfg.formProvider === "formsubmit" && cfg.leadEmail;
+    const useWeb3 = cfg.formProvider !== "formsubmit" && cfg.web3formsKey;
+    if (!useFormsubmit && !useWeb3) {
       // Respaldo: abrir WhatsApp con el resumen de la solicitud.
       window.open(waBase + "?text=" + encodeURIComponent(summary), "_blank", "noopener");
       setStatus("success", T.waOpened + (cfg.whatsappDisplay || "") + ".");
@@ -148,24 +150,40 @@
     submitBtn.dataset.label = submitBtn.textContent;
     submitBtn.textContent = T.sending;
     try {
-      const payload = {
-        access_key: cfg.web3formsKey,
-        subject: T.subject + d.nombre + " (" + d.grado + ") [" + LANG + "]",
-        from_name: "Sitio La Tribu",
-        replyto: d.email || undefined,
-        ccemail: (cfg.leadCc || []).join(","),
-        ...d,
-        resumen: summary,
-        idioma: LANG
-      };
+      const subject = T.subject + d.nombre + " (" + d.grado + ") [" + LANG + "]";
+      let url, payload;
+      if (useFormsubmit) {
+        url = "https://formsubmit.co/ajax/" + cfg.leadEmail;
+        payload = {
+          _subject: subject,
+          _cc: (cfg.leadCc || []).join(","),
+          _replyto: d.email || undefined,
+          _template: "table",
+          _captcha: "false",
+          ...d,
+          resumen: summary,
+          idioma: LANG
+        };
+      } else {
+        url = "https://api.web3forms.com/submit";
+        payload = {
+          access_key: cfg.web3formsKey,
+          subject: subject,
+          from_name: "Sitio La Tribu",
+          replyto: d.email || undefined,
+          ...d,
+          resumen: summary,
+          idioma: LANG
+        };
+      }
       delete payload.botcheck;
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload)
       });
       const json = await res.json();
-      if (json.success) {
+      if (json.success === true || json.success === "true") {
         setStatus("success", T.ok);
         const inline = status.querySelector("[data-wa-inline]");
         if (inline) { inline.href = waBase + "?text=" + encodeURIComponent(summary); inline.target = "_blank"; }
