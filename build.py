@@ -3,7 +3,7 @@
 ES (default) → site/*.html · EN → site/en/*.html · FR → site/fr/*.html
 Uso: python3 build.py
 """
-import re, pathlib, shutil
+import re, pathlib, shutil, time
 
 ROOT = pathlib.Path(__file__).parent
 LAYOUT = (ROOT / "src" / "layout.html").read_text(encoding="utf-8")
@@ -71,6 +71,7 @@ ICONS = {
 }
 
 SITE_URL = "https://perezofir83.github.io/la-tribu/"
+VERSION = str(int(time.time()))
 
 
 def page_key_for(lang, filename):
@@ -112,6 +113,7 @@ def build_page(lang, src: pathlib.Path):
         "HTML_LANG": LANGS[lang]["html_lang"],
         "OG_LOCALE": LANGS[lang]["og_locale"],
         "LANG": lang,
+        "V": VERSION,
         "CANONICAL": SITE_URL + ((LANGS[lang]["dir"] + "/") if LANGS[lang]["dir"] else "") + SLUGS[key][lang],
         "ALT_ES": SITE_URL + SLUGS[key]["es"],
         "ALT_EN": SITE_URL + "en/" + SLUGS[key]["en"],
