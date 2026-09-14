@@ -76,7 +76,7 @@
 
   // --- Current page in nav --------------------------------------------------
   const here = location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".nav__links a, .menu a").forEach((a) => {
+  document.querySelectorAll(".nav__links a, .menu ul a").forEach((a) => {
     const href = a.getAttribute("href");
     if (href === here) a.setAttribute("aria-current", "page");
   });
