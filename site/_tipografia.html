@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Tribu — comparación tipográfica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;600&family=Alegreya:ital,wght@0,500;0,700;1,500&family=Alegreya+Sans:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600&family=Lora:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600&family=Plus+Jakarta+Sans:wght@500;700&family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Andika:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#F3EEE5; --alt:#E9E3D8; --ink:#2F3E46; --soft:#5C6B70; --acc:#B8694B; --earth:#2E4A56; --olive:#6B7A54; --line:#DCD5C8; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family: Manrope, sans-serif; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; }
+  .intro { font-size:15px; color:var(--soft); margin-bottom: 32px; max-width: 720px; }
+  .pair { background:#FBF9F5; border:1px solid var(--line); border-radius:20px; padding:36px 40px; margin-bottom: 28px; }
+  .pair header { display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:24px; }
+  .pair header b { font-family: "Space Grotesk", Manrope, sans-serif; font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--acc); }
+  .pair header span { font-size:14px; color:var(--soft); }
+  .h1 { font-size: 52px; line-height:1.05; margin:0 0 12px; letter-spacing:-.01em; }
+  .h2 { font-size: 30px; line-height:1.15; margin: 26px 0 8px; }
+  .lead { font-size: 19px; line-height:1.55; margin:0 0 6px; }
+  .body { font-size: 16.5px; line-height:1.6; color:var(--ink); margin:0; }
+  .row { display:grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  @media (max-width:760px){ .row{grid-template-columns:1fr} .h1{font-size:38px} }
+  .btn { display:inline-block; margin-top:16px; background:var(--acc); color:#F3EEE5; padding:12px 24px; border-radius:999px; font-weight:600; font-size:15px; }
+  .quote { background:var(--earth); color:#F3EEE5; border-radius:14px; padding:22px 26px; font-style:italic; font-size:22px; line-height:1.35; margin-top:22px; }
+  .note { font-size:14px; color:var(--soft); margin-top:18px; border-top:1px dashed var(--line); padding-top:12px; }
+  .lang { font-family: Manrope; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); margin-bottom:6px; }
+
+  .p1 .h1,.p1 .h2,.p1 .quote { font-family: Fraunces, serif; font-variation-settings:"opsz" 144; font-weight:500; } .p1 .lead,.p1 .body,.p1 .btn { font-family: Manrope, sans-serif; }
+  .p2 .h1,.p2 .h2,.p2 .quote { font-family: Alegreya, serif; font-weight:500; } .p2 .lead,.p2 .body,.p2 .btn { font-family: "Alegreya Sans", sans-serif; font-size:18px; }
+  .p3 .h1,.p3 .h2,.p3 .quote { font-family: "Cormorant Garamond", serif; font-weight:600; } .p3 .h1{font-size:58px} .p3 .lead,.p3 .body,.p3 .btn { font-family: "Nunito Sans", sans-serif; }
+  .p4 .h1,.p4 .h2,.p4 .quote { font-family: Lora, serif; font-weight:500; } .p4 .lead,.p4 .body,.p4 .btn { font-family: "Source Sans 3", sans-serif; font-size:17.5px; }
+  .p5 .h1,.p5 .h2 { font-family: "Plus Jakarta Sans", sans-serif; font-weight:700; letter-spacing:-.02em; } .p5 .quote{font-family:"Plus Jakarta Sans",sans-serif;font-style:normal;font-weight:500} .p5 .lead,.p5 .body,.p5 .btn { font-family: Manrope, sans-serif; }
+  .p6 .h1,.p6 .h2,.p6 .quote { font-family: "Gentium Plus", serif; font-weight:400; } .p6 .lead,.p6 .body,.p6 .btn { font-family: Andika, sans-serif; font-size:16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="intro">Seis combinaciones sobre el texto real del sitio, en la paleta nueva. Título / cuerpo. Las opciones 2, 3, 4 y 6 tienen raíz caligráfica y humanista (cercanas al mundo Waldorf); la 5 es el sans "limpio" del mockup, para comparar.</p>
+
+  <section class="pair p1">
+    <header><b>1 · Actual</b><span>Fraunces (títulos) + Manrope (cuerpo)</span></header>
+    <div class="row">
+      <div><div class="lang">Español</div><h1 class="h1">Una secundaria para aprender, crecer y hacer comunidad.</h1><p class="lead">En La Tribu, los adolescentes hacen, sienten y piensan.</p><p class="body">Cultivan la tierra, construyen sus proyectos, preparan sus propios alimentos y comparten lo aprendido a través del servicio social.</p><span class="btn">Quiero inscribir a mi hijo/a</span></div>
+      <div><div class="lang">English</div><h1 class="h1">A secondary school to learn, grow and build community.</h1><p class="lead">At La Tribu, teenagers do, feel and think.</p><p class="body">They grow food, build their own projects, cook their own meals and share what they learn through community service.</p><h2 class="h2">The foundation of learning</h2></div>
+    </div>
+    <div class="quote">“La verdadera educación no impone, sino que guía y despierta el interés del estudiante.” — R. Steiner</div>
+    <p class="note">Serif con carácter y contraste; sans geométrico y limpio. Editorial, algo "de revista".</p>
+  </section>
+
+  <section class="pair p2">
+    <header><b>2 · Recomendada</b><span>Alegreya (títulos) + Alegreya Sans (cuerpo)</span></header>
+    <div class="row">
+      <div><div class="lang">Español</div><h1 class="h1">Una secundaria para aprender, crecer y hacer comunidad.</h1><p class="lead">En La Tribu, los adolescentes hacen, sienten y piensan.</p><p class="body">Cultivan la tierra, construyen sus proyectos, preparan sus propios alimentos y comparten lo aprendido a través del servicio social.</p><span class="btn">Quiero inscribir a mi hijo/a</span></div>
+      <div><div class="lang">English</div><h1 class="h1">A secondary school to learn, grow and build community.</h1><p class="lead">At La Tribu, teenagers do, feel and think.</p><p class="body">They grow food, build their own projects, cook their own meals and share what they learn through community service.</p><h2 class="h2">The foundation of learning</h2></div>
+    </div>
+    <div class="quote">“La verdadera educación no impone, sino que guía y despierta el interés del estudiante.” — R. Steiner</div>
+    <p class="note">Diseñada para literatura, con ritmo caligráfico y calidez; el sans es de la misma familia, así que todo se siente de una sola mano. La más "Waldorf" sin parecer infantil.</p>
+  </section>
+
+  <section class="pair p3">
+    <header><b>3 · Más poética</b><span>Cormorant Garamond (títulos) + Nunito Sans (cuerpo)</span></header>
+    <div class="row">
+      <div><div class="lang">Español</div><h1 class="h1">Una secundaria para aprender, crecer y hacer comunidad.</h1><p class="lead">En La Tribu, los adolescentes hacen, sienten y piensan.</p><p class="body">Cultivan la tierra, construyen sus proyectos, preparan sus propios alimentos y comparten lo aprendido a través del servicio social.</p><span class="btn">Quiero inscribir a mi hijo/a</span></div>
+      <div><div class="lang">English</div><h1 class="h1">A secondary school to learn, grow and build community.</h1><p class="lead">At La Tribu, teenagers do, feel and think.</p><p class="body">They grow food, build their own projects, cook their own meals and share what they learn through community service.</p><h2 class="h2">The foundation of learning</h2></div>
+    </div>
+    <div class="quote">“La verdadera educación no impone, sino que guía y despierta el interés del estudiante.” — R. Steiner</div>
+    <p class="note">Muy elegante y ligera, casi de invitación. Riesgo: en tamaños chicos se lee fino; funciona mejor para titulares grandes.</p>
+  </section>
+
+  <section class="pair p4">
+    <header><b>4 · Equilibrada</b><span>Lora (títulos) + Source Sans 3 (cuerpo)</span></header>
+    <div class="row">
+      <div><div class="lang">Español</div><h1 class="h1">Una secundaria para aprender, crecer y hacer comunidad.</h1><p class="lead">En La Tribu, los adolescentes hacen, sienten y piensan.</p><p class="body">Cultivan la tierra, construyen sus proyectos, preparan sus propios alimentos y comparten lo aprendido a través del servicio social.</p><span class="btn">Quiero inscribir a mi hijo/a</span></div>
+      <div><div class="lang">English</div><h1 class="h1">A secondary school to learn, grow and build community.</h1><p class="lead">At La Tribu, teenagers do, feel and think.</p><p class="body">They grow food, build their own projects, cook their own meals and share what they learn through community service.</p><h2 class="h2">The foundation of learning</h2></div>
+    </div>
+    <div class="quote">“La verdadera educación no impone, sino que guía y despierta el interés del estudiante.” — R. Steiner</div>
+    <p class="note">Lora tiene raíz caligráfica moderada, muy legible en pantalla; Source Sans es sobrio y humano. Segura y cálida.</p>
+  </section>
+
+  <section class="pair p5">
+    <header><b>5 · Sans del mockup</b><span>Plus Jakarta Sans (títulos) + Manrope (cuerpo)</span></header>
+    <div class="row">
+      <div><div class="lang">Español</div><h1 class="h1">Una secundaria para aprender, crecer y hacer comunidad.</h1><p class="lead">En La Tribu, los adolescentes hacen, sienten y piensan.</p><p class="body">Cultivan la tierra, construyen sus proyectos, preparan sus propios alimentos y comparten lo aprendido a través del servicio social.</p><span class="btn">Quiero inscribir a mi hijo/a</span></div>
+      <div><div class="lang">English</div><h1 class="h1">A secondary school to learn, grow and build community.</h1><p class="lead">At La Tribu, teenagers do, feel and think.</p><p class="body">They grow food, build their own projects, cook their own meals and share what they learn through community service.</p><h2 class="h2">The foundation of learning</h2></div>
+    </div>
+    <div class="quote">“La verdadera educación no impone, sino que guía y despierta el interés del estudiante.” — R. Steiner</div>
+    <p class="note">Limpio y moderno, como el mockup en hebreo. En latín se acerca a startup / app; pierde la calidez artesanal.</p>
+  </section>
+
+  <section class="pair p6">
+    <header><b>6 · Escolar / pedagógica</b><span>Gentium Plus (títulos) + Andika (cuerpo)</span></header>
+    <div class="row">
+      <div><div class="lang">Español</div><h1 class="h1">Una secundaria para aprender, crecer y hacer comunidad.</h1><p class="lead">En La Tribu, los adolescentes hacen, sienten y piensan.</p><p class="body">Cultivan la tierra, construyen sus proyectos, preparan sus propios alimentos y comparten lo aprendido a través del servicio social.</p><span class="btn">Quiero inscribir a mi hijo/a</span></div>
+      <div><div class="lang">English</div><h1 class="h1">A secondary school to learn, grow and build community.</h1><p class="lead">At La Tribu, teenagers do, feel and think.</p><p class="body">They grow food, build their own projects, cook their own meals and share what they learn through community service.</p><h2 class="h2">The foundation of learning</h2></div>
+    </div>
+    <div class="quote">“La verdadera educación no impone, sino que guía y despierta el interés del estudiante.” — R. Steiner</div>
+    <p class="note">Ambas de SIL, pensadas para lectura y alfabetización; Andika tiene formas de letra "de escuela" (a y g simples). Honesta y humilde; menos refinada para marca.</p>
+  </section>
+</div>
+</body>
+</html>
