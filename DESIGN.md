@@ -1,87 +1,77 @@
-# La Tribu — Design System
+# La Tribu — Design System (v2, paleta "tierra y costa")
 
 **Brand:** La Tribu — Escuela Secundaria comunitaria, Zapotal, Oaxaca (cerca de Mazunte).
-**Personality:** cálido, honesto, comunitario, cercano a la tierra. Editorial y humano, nunca corporativo ni "tech". Fotografía real de jóvenes en la naturaleza; textura de papel, tierra, bambú.
-**Language:** Spanish (Mexico). Tone: directo, sin rodeos, primera persona del plural ("nos", "platicamos").
+**Personality:** cálido, honesto, comunitario, cercano a la tierra y al mar. Editorial y humano, nunca corporativo ni "tech". Fotografía real de jóvenes en la naturaleza con luz cálida; textura de papel.
+**Language:** Spanish (Mexico) default; EN and FR versions. Tone: directo, sin rodeos, primera persona del plural.
 
 ## Colors
 
 | Token | Hex | Use |
 |---|---|---|
-| `--color-bg` | `#FAF8F4` | Page background (crema / papel) |
-| `--color-bg-alt` | `#F1ECE2` | Alternating sections, cards |
-| `--color-surface` | `#FFFFFF` | Cards on alt background, form fields |
-| `--color-ink` | `#2D3E33` | Primary text, forest green |
-| `--color-ink-soft` | `#5B6B60` | Secondary text |
-| `--color-accent` | `#D96C4A` | Terracotta: CTAs, headings accent, links |
-| `--color-accent-hover` | `#AD5540` | CTA hover |
-| `--color-earth` | `#3A1A10` | Dark sections (quotes, hero overlay, footer) |
-| `--color-sage` | `#93A893` | Icons, dividers, subtle badges |
-| `--color-olive` | `#2F3B22` | Alternate dark heading |
-| `--color-line` | `#E3DCCF` | Borders, separators |
-| `--color-success` | `#4F7A5A` | Form success |
-| `--color-error` | `#B33A2B` | Form error |
+| `--color-bg` | `#F3EEE5` | Page background (papel crema) |
+| `--color-bg-alt` | `#E9E3D8` | Alternating sections (beige) |
+| `--color-surface` | `#FBF9F5` | Cards, form fields |
+| `--color-ink` | `#2F3E46` | Primary text, headings (slate oscuro) |
+| `--color-ink-soft` | `#5C6B70` | Secondary text |
+| `--color-accent` | `#B8694B` | Terracota: primary CTA, links, CTA band |
+| `--color-accent-hover` | `#9E5740` | CTA hover / accent text at body size |
+| `--color-earth` | `#2E4A56` | Slate azul-verde profundo: footer, quote blocks, mobile menu |
+| `--color-olive` | `#6B7A54` | Verde oliva: secondary CTA band |
+| `--color-olive-deep` | `#5F6E55` | Secondary buttons, checkmarks |
+| `--color-sage` | `#8FA08A` | Dividers, subtle badges |
+| `--color-rose` | `#E5C4BD` | Icon circle tint, footer labels |
+| `--color-sand` | `#E3D5C0` | Icon circle tint, avatars |
+| `--color-stone` | `#B7BFC0` | Icon circle tint (gris azulado) |
+| `--color-mint` | `#C9D3C4` | Icon circle tint (salvia claro) |
+| `--color-line` | `#DCD5C8` | Borders, separators |
+| `--color-success` | `#5F6E55` | Form success |
+| `--color-error` | `#A9432F` | Form error |
 | `--color-whatsapp` | `#25D366` | WhatsApp button only |
 
-Contrast: `#2D3E33` on `#FAF8F4` = 10.9:1. `#D96C4A` on `#FAF8F4` = 3.4:1 → use only for text ≥ 24px or as background with white text (5.0:1 with `#FFFFFF`? no — use `#FAF8F4` text on `#D96C4A` buttons at ≥ 16px semibold; body-size accent text uses `#AD5540`, 5.1:1).
+Contrast: `#2F3E46` on `#F3EEE5` = 10.2:1. `#F3EEE5` on `#B8694B` = 4.6:1 (buttons ≥16px semibold OK). `#F3EEE5` on `#6B7A54` = 5.1:1. `#F3EEE5` on `#2E4A56` = 9.4:1. Body-size terracotta text uses `#9E5740` (5.6:1).
+
+Palette rhythm on a page: cream → beige → cream, with one deep slate quote block, one terracotta CTA band and one olive CTA band. Never two dark bands adjacent.
 
 ## Typography
 
-- **Display / headings:** Fraunces (Google Fonts), variable, optical size on. Weights 500–600. Tight tracking (-0.01em). Italic allowed for single emphasized word.
+- **Display / headings:** Fraunces (Google Fonts), variable, optical size on. Weights 500–600. Tight tracking (-0.01em).
 - **Body:** Manrope, 400/500/600. Line-height 1.6.
 - **UI / labels / nav / eyebrows:** Space Grotesk 500, uppercase, letter-spacing 0.12em, 12–13px.
 
-Scale (desktop / mobile):
-- Display `h1`: 64 / 40px, Fraunces 500, lh 1.05
-- `h2`: 44 / 32px, Fraunces 500, lh 1.15
-- `h3`: 26 / 22px, Fraunces 600
-- Lead: 20 / 18px, Manrope 400
-- Body: 17 / 16px
-- Small: 14px
-- Eyebrow: 13px Space Grotesk uppercase
+Scale (desktop / mobile): h1 64/40 · h2 44/32 · h3 26/22 · lead 20/18 · body 17/16 · small 14 · eyebrow 13.
 
 ## Spacing & layout
 
-- Base unit 8px. Section padding 96px desktop / 64px mobile.
-- Container max-width 1200px, gutters 24px (mobile) / 48px.
-- Grid 12 col. Cards in 4 → 2 → 1 columns.
-- Radius: cards 16px, buttons 999px (pill), images 20px, inputs 12px.
-- Shadows: none by default; cards on hover `0 8px 24px rgba(45,62,51,0.08)`.
-- Borders 1px `--color-line`.
+- Base unit 8px. Section padding 96px desktop / 64px mobile. Container 1200px, gutters 24/48px.
+- Radius: cards 16px, buttons pill (999px), images 20px, inputs 12px, icon circles 50%.
+- Shadows none by default; cards on hover `0 8px 24px rgba(47,62,70,0.08)`. Borders 1px `--color-line`.
 
 ## Components
 
-**Buttons**
-- Primary: bg `--color-accent`, text `#FAF8F4`, pill, 16px Manrope 600, padding 14px 28px. Hover `--color-accent-hover`, translateY(-1px).
-- Secondary: transparent, 1.5px border `--color-ink`, text `--color-ink`. Hover fill `--color-ink`, text `#FAF8F4`.
-- WhatsApp: bg `#25D366`, white text, WhatsApp icon left. Used in nav (compact) and CTA blocks.
-- Ghost link: accent text + arrow, underline on hover.
+**Buttons**: Primary terracotta pill, cream text. Secondary olive-deep pill, cream text. Cream pill (on colored bands) with terracotta text. Light outline pill on photos. WhatsApp green with icon. Ghost link terracotta + arrow.
 
-**Nav**: sticky, cream with 1px bottom line, logo left (icon + "La Tribu" in Fraunces 600), links center (Space Grotesk 500 15px), CTA right "Inscripciones" (primary) + WhatsApp icon button. Mobile: hamburger → full-screen menu on `--color-earth`.
+**Nav**: sticky cream, 1px line, logo + "La Tribu" Fraunces, links Space Grotesk, active link underlined terracotta; language switcher ES/EN/FR pill; CTA "Inscripciones" primary + WhatsApp icon. Mobile menu full-screen on `--color-earth`.
 
-**Hero**: full-bleed photo with gradient overlay (`rgba(58,26,16,0.55)` → `0.25`), centered white Fraunces h1, one primary CTA + one secondary (outline light). Height 80vh min 560px.
+**Hero**: full-bleed warm photo, slate gradient overlay (`rgba(47,62,70,.30)` → `rgba(46,74,86,.62)`), cream Fraunces h1, primary + light outline CTAs.
 
-**Cards** (talleres, pilares, materias): `--color-surface` on alt bg, 16px radius, 32px padding, line icon 40px (stroke 2px, `--color-ink`), h3, body. Numbered steps use a 48px circle with Fraunces numeral in accent.
+**Feature icons**: 2px line icons in 64px tinted circles, rotating sand → rose → stone → mint.
 
-**Quote block**: full-width `--color-earth`, Fraunces italic 32–40px, cream text, author in Space Grotesk uppercase sage.
+**Cards**: surface on beige, 16px radius, 32px padding, tinted icon circle, h3, body.
 
-**Accordion (FAQ)**: rows separated by `--color-line`, question Fraunces 22px, plus/minus icon in accent, answer Manrope.
+**Quote block**: `--color-earth` full width, Fraunces italic cream, author uppercase in rose.
 
-**Forms (landing)**: labels Space Grotesk uppercase 12px; inputs 52px height, `--color-surface`, 1px `--color-line`, radius 12px, focus ring 2px accent. Required marker in accent. Submit = primary full-width on mobile. Success state: sage panel with check icon.
+**CTA bands**: terracotta (`--color-accent`) for enrollment; olive (`--color-olive`) for "get to know us"; both with cream headings, cream pill + WhatsApp button. On home the two can sit side by side (split band) like the mockup.
 
-**Footer**: `--color-earth` background, cream text, 4 columns (marca + descripción, navegación, contacto, redes), social icons row, legal line small.
+**Accordion (FAQ)**: rows separated by `--color-line`, Fraunces questions, terracotta ± circle.
+
+**Forms**: uppercase Space Grotesk labels, 52px inputs on `--color-surface`, 12px radius, 2px terracotta focus ring, olive success panel.
+
+**Footer**: `--color-earth`, cream text, rose uppercase column headings, social icon circles, legal line small.
 
 ## Imagery & icons
 
-- Photos: warm, natural light, real teens outdoors (mar, sendero, huerto). No stock smiles. Slight warm grade.
-- Icons: 2px stroke line icons, rounded caps, `--color-ink` (see extracted set: pala, escuadra, matraz, semillas, corazón, balanza, brote, triángulo).
-- Logo: chevron/dot pyramid in `--color-ink`; on dark use cream.
+Photos: warm natural light, real teens outdoors (mar, sendero, huerto, cocina). Icons: 2px stroke, rounded caps, `--color-ink`. Logo: chevron/dot pyramid in `--color-ink`; cream on dark.
 
 ## Motion
 
-- Fade-up on scroll 400ms ease-out, 24px. Reduced-motion respected.
-- Hover transitions 150ms.
-
-## Pages
-
-1. Inicio · 2. Quiénes somos · 3. El proyecto educativo · 4. La biblioteca · 5. Preguntas frecuentes · 6. **Inscripciones** (landing con formulario de datos: nombre, WhatsApp, email, nombre y edad del/la estudiante, grado de interés 1º/2º, cómo nos conociste, mensaje).
+Fade-up on scroll 400ms ease-out, 24px. Hover 150ms. Reduced-motion respected.
