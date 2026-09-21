@@ -17,7 +17,7 @@ window.LT_CONFIG = {
   // Redes sociales (deja vacío lo que no exista; el ícono se oculta solo).
   social: {
     instagram: "https://www.instagram.com/secundarialatribu",
-    facebook: "",
+    facebook: "https://www.facebook.com/share/19GHZm2meG/",
     youtube: "",
     tiktok: ""
   }
