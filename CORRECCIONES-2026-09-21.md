@@ -15,7 +15,7 @@ Fuente: mensaje de Nelly (contenido) + notas de voz y capturas de Meche (estilo)
 |---|---|---|
 | 3 | Valor: "Servicio social elegido por los propios estudiantes" | "Servicio social apoyando a la comunidad y el medio ambiente" |
 | 4 | Pilar Hacer, sentir y pensar: "Cultivar, construir, **cocinar** y crear." | "Cultivar, construir y crear." |
-| 5 | Equipo: 6 personas, casi todas "Colaboradora" | 8 personas con su rol: Nelly Bordelais (Dirección y coordinación) · Dafne Mireya Valdez (Maestra principal) · Ixchel Gómez (Responsable de gestión del patrimonio) · Michal Pérez (Responsable de comunicación y difusión) · Elisa Pérez (Relaciones públicas) · Diego Alvidez Carbajal (Maestro de construcción y carpintería) · Ofir Pérez (Consejero y maestro de emprendimiento) · Mercedes Crespo (Consejera y maestra de dibujo y arte) |
+| 5 | Equipo: 6 personas, casi todas "Colaboradora" | 8 personas con su rol: Nelly Bordelais (Dirección y coordinación) · Dafne Mireya Valdez (Maestra principal) · Ixchel Gómez (Responsable de gestión del patrimonio) · Sol Pérez Weinberg (Responsable de comunicación y difusión) · Elisa Pérez (Relaciones públicas) · Diego Alvidez Carbajal (Maestro de construcción y carpintería) · Ofir Pérez Weinberg (Consejero y maestro de emprendimiento) · Mercedes Crespo (Consejera y maestra de dibujo y arte) |
 | 6 | "¿Quieres formar parte del grupo fundacional?" / "Las primeras familias dan forma a la escuela." | "¿Quieres formar parte y conocer más de la comunidad?" / "Las primeras familias dejan una huella indeleble en la forma de la escuela. Platiquemos." |
 
 ### El proyecto educativo
@@ -69,7 +69,7 @@ En inglés y francés se aplicaron los cambios 18, 19 y 28; las comas se dejaron
 ## Pendiente / por confirmar
 
 1. **Facebook**: enviar el enlace de la página para añadirlo al pie.
-2. **"Michel Perez"** en el mensaje: en el sitio quedó **Michal Pérez**. Confirmar ortografía (y si los tres Pérez llevan acento).
+2. Nombres: en el sitio quedaron **Sol Pérez Weinberg** (en lugar de "Michel Perez") y **Ofir Pérez Weinberg**, por indicación de Ofir.
 3. **"Los alimentos rotan"** (FAQ, costos): ¿sigue siendo cierto este año, o también se quita?
 4. **Inicio → "¿Te sumas a la Tribu?"** todavía dice "conformación del grupo fundacional" (venía del texto original de Wix, igual que la pregunta sobre "familias fundadoras" en FAQ). ¿Lo cambiamos también?
 5. **Fotos y videos del Drive** del correo de la escuela: necesito acceso (o que los compartan) para sustituir fotos y montar la biblioteca con vista previa de 5–10 min + tienda en línea.
