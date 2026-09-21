@@ -101,6 +101,15 @@ def build_page(lang, src: pathlib.Path):
     base = "../" if LANGS[lang]["dir"] else ""
     s = STRINGS[lang]
 
+    # Fotos del equipo: si existe site/assets/team/<slug>.jpg sustituye a las iniciales.
+    def team_photo(m):
+        slug, initials = m.group(1), m.group(2)
+        if (OUT / "assets" / "team" / f"{slug}.jpg").exists():
+            return (f'<div class="person__avatar person__avatar--photo">'
+                    f'<img src="{base}assets/team/{slug}.jpg?v={VERSION}" alt="" width="600" height="600" loading="lazy"></div>')
+        return f'<div class="person__avatar">{initials}</div>'
+    content = re.sub(r'<div class="person__avatar" data-photo="([^"]+)">([^<]*)</div>', team_photo, content)
+
     # Enlaces internos dentro del contenido: {{P:about}} → ruta correcta.
     content = re.sub(r"\{\{P:(\w+)\}\}", lambda m: href(lang, m.group(1), lang), content)
 

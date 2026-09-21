@@ -26,6 +26,18 @@ Páginas por idioma: inicio, quiénes somos, proyecto educativo, biblioteca, FAQ
 
 Vista local: `python3 -m http.server 8765 --directory site` → http://localhost:8765
 
+## Fotos del equipo
+
+Cada persona en "Quiénes somos" muestra sus iniciales hasta que exista su foto en `site/assets/team/<slug>.jpg`; entonces `build.py` la pone automáticamente (en los tres idiomas).
+
+```
+python3 tools/add_team_photo.py foto.jpg nelly-bordelais            # recorte centrado
+python3 tools/add_team_photo.py foto.jpg nelly-bordelais 900 700 1000 --luz 1.3   # centro de la cara (x y), lado del recorte, aclarar sombras
+python3 build.py
+```
+
+Slugs: nelly-bordelais · dafne-mireya-valdez · ixchel-gomez · sol-perez-weinberg · elisa-perez · diego-alvidez-carbajal · ofir-perez-weinberg · mercedes-crespo
+
 ## Leads → Gmail (pendiente de configurar)
 
 El formulario de `inscripciones.html` envía por **Web3Forms** (gratis, 250 envíos/mes) al correo que se configure.
