@@ -34,9 +34,9 @@ Palette rhythm on a page: cream → beige → cream, with one deep slate quote b
 
 ## Typography
 
-- **Display / headings:** Fraunces (Google Fonts), variable, optical size on. Weights 500–600. Tight tracking (-0.01em).
-- **Body:** Manrope, 400/500/600. Line-height 1.6.
-- **UI / labels / nav / eyebrows:** Space Grotesk 500, uppercase, letter-spacing 0.12em, 12–13px.
+- **Display / headings:** Alegreya (Google Fonts), humanist calligraphic serif. Weights 500 (h1/h2) and 700 (h3, brand). Tight tracking (-0.01em). Italic for quotes.
+- **Body:** Alegreya Sans, 400/500/700. Line-height 1.6. Runs small, so body is 17.5px mobile / 19px desktop.
+- **UI / labels / nav / eyebrows:** Alegreya Sans 700, uppercase, letter-spacing 0.12em, 13–14px. One type family across the site (chosen for its warmth, close to the Waldorf / anthroposophic visual world).
 
 Scale (desktop / mobile): h1 64/40 · h2 44/32 · h3 26/22 · lead 20/18 · body 17/16 · small 14 · eyebrow 13.
 
@@ -50,21 +50,21 @@ Scale (desktop / mobile): h1 64/40 · h2 44/32 · h3 26/22 · lead 20/18 · body
 
 **Buttons**: Primary terracotta pill, cream text. Secondary olive-deep pill, cream text. Cream pill (on colored bands) with terracotta text. Light outline pill on photos. WhatsApp green with icon. Ghost link terracotta + arrow.
 
-**Nav**: sticky cream, 1px line, logo + "La Tribu" Fraunces, links Space Grotesk, active link underlined terracotta; language switcher ES/EN/FR pill; CTA "Inscripciones" primary + WhatsApp icon. Mobile menu full-screen on `--color-earth`.
+**Nav**: sticky cream, 1px line, logo + "La Tribu" Alegreya, links Alegreya Sans, active link underlined terracotta; language switcher ES/EN/FR pill; CTA "Inscripciones" primary + WhatsApp icon. Mobile menu full-screen on `--color-earth`.
 
-**Hero**: full-bleed warm photo, slate gradient overlay (`rgba(47,62,70,.30)` → `rgba(46,74,86,.62)`), cream Fraunces h1, primary + light outline CTAs.
+**Hero**: full-bleed warm photo, slate gradient overlay (`rgba(47,62,70,.30)` → `rgba(46,74,86,.62)`), cream Alegreya h1, primary + light outline CTAs.
 
 **Feature icons**: 2px line icons in 64px tinted circles, rotating sand → rose → stone → mint.
 
 **Cards**: surface on beige, 16px radius, 32px padding, tinted icon circle, h3, body.
 
-**Quote block**: `--color-earth` full width, Fraunces italic cream, author uppercase in rose.
+**Quote block**: `--color-earth` full width, Alegreya italic cream, author uppercase in rose.
 
 **CTA bands**: terracotta (`--color-accent`) for enrollment; olive (`--color-olive`) for "get to know us"; both with cream headings, cream pill + WhatsApp button. On home the two can sit side by side (split band) like the mockup.
 
-**Accordion (FAQ)**: rows separated by `--color-line`, Fraunces questions, terracotta ± circle.
+**Accordion (FAQ)**: rows separated by `--color-line`, Alegreya questions, terracotta ± circle.
 
-**Forms**: uppercase Space Grotesk labels, 52px inputs on `--color-surface`, 12px radius, 2px terracotta focus ring, olive success panel.
+**Forms**: uppercase Alegreya Sans labels, 52px inputs on `--color-surface`, 12px radius, 2px terracotta focus ring, olive success panel.
 
 **Footer**: `--color-earth`, cream text, rose uppercase column headings, social icon circles, legal line small.
 
