@@ -106,7 +106,7 @@ def build_page(lang, src: pathlib.Path):
         slug, initials = m.group(1), m.group(2)
         if (OUT / "assets" / "team" / f"{slug}.jpg").exists():
             return (f'<div class="person__avatar person__avatar--photo">'
-                    f'<img src="{base}assets/team/{slug}.jpg?v={VERSION}" alt="" width="600" height="600" loading="lazy"></div>')
+                    f'<img src="{base}assets/team/{slug}.jpg?v={VERSION}" alt="" width="600" height="600" decoding="async"></div>')
         return f'<div class="person__avatar">{initials}</div>'
     content = re.sub(r'<div class="person__avatar" data-photo="([^"]+)">([^<]*)</div>', team_photo, content)
 
