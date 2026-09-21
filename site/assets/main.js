@@ -42,6 +42,11 @@
     el.textContent = cfg.whatsappDisplay || "";
   });
 
+  // --- Email de contacto -----------------------------------------------------
+  document.querySelectorAll("[data-email]").forEach((a) => {
+    if (cfg.leadEmail) { a.href = "mailto:" + cfg.leadEmail; a.textContent = cfg.leadEmail; }
+  });
+
   // --- Social links ---------------------------------------------------------
   const social = cfg.social || {};
   document.querySelectorAll("[data-social]").forEach((a) => {
