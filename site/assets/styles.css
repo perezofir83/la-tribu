@@ -207,6 +207,11 @@ p { margin: 0 0 1em; }
 .img-rounded { border-radius: var(--radius-img); object-fit: cover; width: 100%; aspect-ratio: 4/3; }
 .img-rounded--tall { aspect-ratio: 4/5; }
 
+.banner { margin: 0 0 40px; }
+.banner img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 60% 50%; border-radius: var(--radius-img); display: block; }
+@media (min-width: 700px) { .banner img { aspect-ratio: 16 / 9; } }
+.banner figcaption { margin-top: 10px; font-family: var(--font-ui); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: var(--color-ink-soft); }
+
 /* Cards */
 .card {
   background: var(--color-surface); border: 1px solid var(--color-line);
