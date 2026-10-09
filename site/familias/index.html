@@ -94,7 +94,8 @@ body.on-dark .nav{color:var(--cream-soft)}
 .track{height:clamp(46px,7vh,68px);position:relative}
 .fill{height:100%;border-radius:0 999px 999px 0;background:var(--olive);display:flex;align-items:center;justify-content:flex-end;padding-right:18px;
   color:var(--cream);font-family:var(--display);font-weight:700;font-size:clamp(24px,2.4vw,38px);min-width:84px;transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
-.fill.f2{background:var(--earth)} .fill.f3{background:var(--terra)}
+.fill.f2{background:var(--earth)} .fill.f3{background:var(--terra)} .fill.mkt{background:#66767B}
+#permeter .barrow{grid-template-columns:minmax(160px,260px) 1fr}
 
 /* 04 proof */
 .proof{display:grid;grid-template-columns:auto auto auto;justify-content:start;gap:clamp(16px,3vw,48px);align-items:end}
@@ -186,6 +187,7 @@ body.on-dark .nav{color:var(--cream-soft)}
   .stats,.cards{grid-template-columns:1fr}
   .stat+.stat{padding-left:0;border-left:0;border-top:1px solid var(--line)}
   .barrow{grid-template-columns:1fr;gap:6px}
+  #permeter .barrow{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){
   .kb{animation:none} #deck{scroll-behavior:auto} .fill{transition:none}
@@ -327,6 +329,22 @@ body.on-dark .nav{color:var(--cream-soft)}
       <div><span class="muted" data-es="Valor de la hectárea completa">Price of the whole hectare</span><b>$2,500,000 MXN</b></div>
     </div>
     <p class="lead" style="max-width:56ch" data-es="Hoy es muy difícil encontrar en esta zona terrenos de estas dimensiones, con vista al mar y a este precio.">Today it is very hard to find lots of this size, with a sea view and at this price, in this area.</p>
+  </div>
+</section>
+
+<!-- 07b price per m2 -->
+<section class="slide paper" id="permeter">
+  <div class="in stack" style="gap:clamp(22px,4vh,44px)">
+    <div class="stack">
+      <p class="eyebrow" data-es="Precio por metro cuadrado">Price per square metre</p>
+      <h2 class="h-xl" data-es="Casi <em>3 veces</em> por debajo del mercado.">Almost <em>3 times</em> below the market.</h2>
+    </div>
+    <div class="bars" aria-label="Price per square metre">
+      <div class="barrow"><span class="lbl" data-es="En este proyecto">In this project</span><div class="track"><div class="fill f3" style="width:36%"><span>$250</span></div></div></div>
+      <div class="barrow"><span class="lbl" data-es="Lo más barato hoy en Zapotal">Lowest price in Zapotal today</span><div class="track"><div class="fill mkt" style="width:100%"><span>$700</span></div></div></div>
+    </div>
+    <p class="muted" data-es="Pesos mexicanos por m². En la misma zona de Zapotal, el precio más bajo del mercado hoy es de $700 por m². En este proyecto: $2,500,000 ÷ 10,000 m² = $250 por m².">Mexican pesos per m². In the same area of Zapotal, the lowest market price today is $700 per m². In this project: $2,500,000 ÷ 10,000 m² = $250 per m².</p>
+    <p class="times" style="background:var(--terra-deep);color:var(--cream)"><b>2.8×</b> <span data-es="menos que el precio más bajo del mercado">below the lowest market price</span></p>
   </div>
 </section>
 
